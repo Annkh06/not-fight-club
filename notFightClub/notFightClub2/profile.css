@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-body{
+body {
     height: 100vh;
 }
 
@@ -23,7 +23,7 @@ body{
 
 p {
     display: flex;
-     font-size: 15px;
+    font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -40,29 +40,85 @@ img {
     cursor: pointer;
 }
 
-.img_character{
+.img_character {
     display: flex;
     margin-left: 50px;
     margin-top: 50px;
     width: 300px;
     height: 300px;
-overflow: hidden;
+    overflow: hidden;
+    z-index: 3;
 }
 
-.character{
+.character {
     width: 300px;
     height: 300px;
 }
 
 
-.content_character{
+.content_character {
     display: flex;
     width: 540px;
     justify-content: space-around;
+    flex-direction: row;
 }
 
-.p_name{
-margin-top: 50px;
-margin-left: 0px;
-height: 50px;
+.p_name {
+    margin-top: 50px;
+    margin-left: 0px;
+    height: 50px;
+}
+
+.results_wins {
+    display: flex;
+    margin-top: 80px;
+    margin-left: -50px;
+}
+
+.results_loses {
+    margin-top: 80px;
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: rgb(255 255 255 / 0.8);
+    display: flex;
+    display: none;
+    z-index: 1;
+}
+
+.modal_conent {
+    width: 50%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: rgb(163, 163, 163);
+    z-index: 5;
+}
+
+.closeBtn1 {
+    display: flex;
+    z-index: 5;
+    color: #26ff09;
+    opacity: 1;
+    margin-top: 300px;
+
+    cursor: pointer;
+}
+
+.characterModal {
+    width: 160px;
+    height: 180px;
+    opacity: 1;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
