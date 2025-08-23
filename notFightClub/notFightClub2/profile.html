@@ -19,18 +19,32 @@
                 <a href="./profile.html">
                     <img class="" src="./profile.svg" alt="profile">
                 </a>
-                <img class="" src="./settings.svg" alt="settings">
+                <a href="./settings.html">
+                    <img class="" src="./settings.svg" alt="settings">
+                </a>
             </div>
         </div>
     </div>
     <div class="content_character">
         <div class="img_character">
-            <img class="character" src="character1.png" alt="character1">
-            <img class="character" src="character2.png" alt="character2">
-            <img class="character" src="character3.png" alt="character3">
-            <img class="character" src="character4.png" alt="character4">
+            <img class="character" id='current-character'>
+            <div class="modal" id="modal">
+                <div class="modal_conent">
+                    <img class="characterModal" src="character1.png" data-src='character1.png' id='ch1'
+                        alt="character1">
+                    <img class="characterModal" src="character2.png" data-src='character2.png' id='ch2'
+                        alt="character2">
+                    <img class="characterModal" src="character3.png" data-src='character3.png' id='ch3'
+                        alt="character3">
+                    <img class="characterModal" src="character4.png" data-src='character4.png' id='ch4'
+                        alt="character4">
+                    <button class='closeBtn1' id="closeBtn">✘</button>
+                </div>
+            </div>
         </div>
         <p class='p_name' id="name_character"></p>
+        <p class='results_wins' id="wins">Wins: 0</p>
+        <p class='results_loses' id="loses">Loses: 0</p>
     </div>
 </body>
 <script src="./profile.js"></script>
