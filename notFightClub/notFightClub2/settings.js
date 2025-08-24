@@ -1,0 +1,1 @@
+document.getElementById('name_character').innerHTML = localStorage.getItem('textvalue');
