@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not a fight club</title>
+    <link rel="stylesheet" href="fight.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <p>Battle</p>
+            <div class="img_container">
+                <a href="./index2.html">
+                    <img class="" src="./home.svg" alt="home">
+                </a>
+                <a href="./profile.html">
+                    <img class="" src="./profile.svg" alt="profile">
+                </a>
+                <a href="./settings.html">
+                    <img class="" src="./settings.svg" alt="settings">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fight_container">
+        <div class="left_character">
+            <p class='p_name' id="name_character"> </p>
+        <div class="img_character">
+            <img class="characterModal" id='current-character'>
+            </div>
+            <progress id="healthBar" value="150" max="150"></progress>
+                </div>
+
+<div class="center">
+    <h4 class="p-center">Please pick 1 Attack zone and 2 Defence zones</h4>
+<div class="zone">
+    <div class="zone-group-left">
+        <h3>Attack Zones</h3>
+        <label>
+            <input type="radio" name="attackZone" value="head"> Head</label>
+        <label>
+            <input type="radio" name="attackZone" value="neck"> Neck</label>
+        <label>
+            <input type="radio" name="attackZone" value="body"> Body</label>
+        <label>
+            <input type="radio" name="attackZone" value="belly"> Belly</label>
+        <label>
+            <input type="radio" name="attackZone" value="legs"> Legs</label>
+    </div>
+  <div class="zone-group-right">
+        <h3>Defence Zones</h3>
+        <label >
+            <input type="checkbox" name="defenceZone" value="head"  > Head</label>
+        <label>
+            <input type="checkbox" name="defenceZone" value="neck" > Neck</label>
+        <label>
+            <input type="checkbox" name="defenceZone" value="body" > Body</label>
+        <label>
+            <input type="checkbox" name="defenceZone" value="belly" > Belly</label>
+        <label>
+            <input type="checkbox" name="defenceZone" value="legs" > Legs</label>
+    </div>
+    </div>
+      <button id="attackButton" disabled>Attack!</button>
+</div>
+
+
+                <div class="left_character">
+            <p class='p_name_foe'> Metal Gear </p>
+        <div class="img_character">
+            <img class="characterModal" id='current-character' src="foe1.jpg">
+            </div>
+            <progress id="healthBar" value="150" max="150"></progress>
+                </div>
+        </div>
+
+    <div id="attack_result"></div>
+
+</body>
+<script src="./fight.js"></script>
+
+</html>
