@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    border-bottom: 3px solid #000;
+    height: 60px;
+}
+
+.content {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+p {
+    display: flex;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img_container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+
+
+.p-center {
+    margin-top: -100px;
+    margin-left: -180px;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p_name,
+.p_name_foe {
+    height: 40px;
+}
+
+.fight_container {
+    height: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left_character {
+    width: 450px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.characterModal {
+    width: 250px;
+    height: 350px;
+}
+
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+progress::-webkit-progress-value {
+    background: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-bar {
+    background: #b7b6b6;
+    border-radius: 5px;
+    border-style: #000;
+}
+
+.zone {
+    margin-left: -130px;
+    font-size: 15px;
+}
+
+.zone-group-right,
+.zone-group-left {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.zone-group-right label,
+.zone-group-left label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+#attackButton {
+    margin-top: 20px;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: -60px;
+    width: 80px;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#attack_result {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
